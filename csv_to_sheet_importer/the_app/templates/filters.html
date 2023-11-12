@@ -1,0 +1,45 @@
+{% extends 'parent.html' %}
+
+
+<!-- Head starts -->
+{% block headcontent %}
+
+<title>The Ultimate CSV importer for Google sheets</title>
+
+{% endblock %}
+<!-- Head ends -->
+
+
+<!-- Body starts -->
+{% block bodycontent %}
+
+<h1 class="text-center pt-1">The Ultimate CSV importer for Google sheets</h1>
+
+
+<div class="row">
+
+    <div class="mx-auto col-10 col-md-8 col-lg-6">
+
+        <form class="container mt-5 pt-5" method="post" enctype="multipart/form-data">
+
+            <h2>Select columns to import</h2>
+            
+            {% csrf_token %}
+
+            {% for col in columns %}
+                <input type="checkbox" id="filter" name="cols" value={{col}}>
+                <label for="filter"> {{col}}</label><br>
+                </br>
+            {% endfor %}
+            
+            <button type="submit" class="btn btn-success">Import</button>
+            
+        </form>
+
+    </div>
+
+</div>
+  
+
+{% endblock %}
+<!-- Body ends -->

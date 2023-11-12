@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'csv_to_sheet_importer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '###',
-        'USER': '###',
-        'PASSWORD': '###',
-        'HOST': '###',
-        'PORT': '###',
+        'NAME': '#',
+        'USER': '#',
+        'PASSWORD': '#',
+        'HOST': '#',
+        'PORT': '#',
     }
 }
 
