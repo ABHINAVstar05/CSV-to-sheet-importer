@@ -1,1 +1,3 @@
 virtual_env/
+csv_to_sheet_importer/csv_to_sheet_importer/settings.py
+csv_to_sheet_importer/the_app/credentials.json
